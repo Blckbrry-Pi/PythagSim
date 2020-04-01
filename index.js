@@ -3,7 +3,7 @@ function setup() {
     textAlign(CENTER, CENTER);
     
     sliderPercentage = createSlider(10, 100, 50, 1);
-    sliderPercentage.position(10, 10);
+    sliderPercentage.position(width/30, height - height/30);
     sliderPercentage.style('width', '80px');
 
 }
