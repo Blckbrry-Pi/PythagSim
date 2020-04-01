@@ -9,7 +9,7 @@ function setup() {
     sliderPercentage = createSlider(10, 100, 50, 1);
 }
 function draw() {
-    fill(255);
+    fill(0);
     background(255);
     
     rect(0, height/10*9,  width, height/10);
