@@ -4,7 +4,7 @@ function setup() {
     
     sliderPercentage = createSlider(10, 100, 50, 1);
     sliderPercentage.position(width/30, height - height/30);
-    sliderPercentage.style('width', '80px');
+    sliderPercentage.style('width', width/15*14);
 
 }
 function draw() {
