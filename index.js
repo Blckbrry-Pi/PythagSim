@@ -16,6 +16,6 @@ function draw() {
     
     fill(255);
     text("Square Sizes", width/4, height/30*28);
+    sliderSize.position(width/30, height - height/30);
     sliderPercentage.position(width/30*16, height - height/30);
-    sliderPercentage.style('width', width/15*7);
 }
