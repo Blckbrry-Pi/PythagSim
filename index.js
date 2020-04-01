@@ -3,11 +3,14 @@ function setup() {
 
 }
 
-
+let sliderPercentage
 function draw() {
     createCanvas(innerWidth, innerHeight);
     fill(255);
     
-    background(20);
+    background(255);
     
+    slider = createSlider(.1, 1, 0.5);
+    slider.position(10, 10);
+    slider.style('width', '80px');
 }
