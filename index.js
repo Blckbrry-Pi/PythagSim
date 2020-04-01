@@ -10,7 +10,7 @@ function draw() {
     
     background(255);
     
-    slider = createSlider(.1, 1, 0.5);
+    slider = createSlider(.1, 1, 0.5, 0.01);
     slider.position(10, 10);
     slider.style('width', '80px');
 }
