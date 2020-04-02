@@ -11,6 +11,7 @@ function setup() {
 function draw() {
     frameRate(1);
     background(255);
+    stroke(255, 0, 0);
     drawSquaresAB(sliderSize.value(), sliderPercentage.value() / 100);
     
     
@@ -19,7 +20,7 @@ function draw() {
     
     
     fill(0);
-    stroke(255, 0, 0);
+    stroke(0, 0, 0);
     text("Square Sizes", width/4, height/30*28);
     text("A:B ratio", width/4*3, height/30*28);
     sliderSize.position(width/30, height - height/30);
