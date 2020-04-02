@@ -30,7 +30,6 @@ function draw() {
 function drawSquaresAB(size, ratio){
     for(let y = -ceil(width / size / (1 - ratio / 2)); y < ceil(width / size / (1 - ratio / 2)); y++){
         for(let x = 0 - ceil(height/size); x < ceil(width/size); x++){
-            console.log(x + ", " + y);
             drawA(x, y, size*ratio, size);
             drawB(x, y, size*ratio, size);
         }
@@ -47,8 +46,12 @@ function drawB(lateral, vertical, sizeA, sizeB){
     rect(lateral * sizeA + lateral * sizeB + vertical * sizeA, (sizeB - sizeA) * lateral + vertical * sizeB, sizeB, sizeB);
 }
 
-function drawSquaresC(){
-    
+function drawSquaresC(size, ratio){
+    for(let y = -ceil(width / size / (1 - ratio / 2)); y < ceil(width / size / (1 - ratio / 2)); y++){
+        for(let x = 0 - ceil(height/size); x < ceil(width/size); x++){
+            drawC(x, y, size*ratio, size);
+        }
+    }
 }
 
 function drawC(lateral, vertical, sizeA, sizeB){
