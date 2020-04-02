@@ -10,14 +10,16 @@ function setup() {
 }
 function draw() {
     frameRate(1);
-    fill(255);
     background(255);
     drawSquaresAB(sliderSize.value(), sliderPercentage.value() / 100);
+    
+    
+    fill(255);
     rect(0, height/10*9,  width, height/10);
     
     
     fill(0);
-    stroke(0);
+    stroke(255, 0, 0);
     text("Square Sizes", width/4, height/30*28);
     text("A:B ratio", width/4*3, height/30*28);
     sliderSize.position(width/30, height - height/30);
@@ -35,12 +37,12 @@ function drawSquaresAB(size, ratio){
 }
 
 function drawA(lateral, vertical, sizeA, sizeB){
-    fill(100);
+    fill(0, 255, 0);
     rect(lateral * sizeA + (lateral + 1) * sizeB + vertical * sizeA, (sizeB - sizeA) * (lateral + 1) + vertical * sizeB, sizeA, sizeA);
 }
 
 function drawB(lateral, vertical, sizeA, sizeB){
-    fill(200);
+    fill(255, 255, 0);
     rect(lateral * sizeA + lateral * sizeB + vertical * sizeA, (sizeB - sizeA) * lateral + vertical * sizeB, sizeB, sizeB);
 }
 
