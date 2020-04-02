@@ -26,8 +26,9 @@ function draw() {
 function drawSquaresAB(size, ratio){
     for(let y = -ceil(size * (1 + ratio) * height / width * 2); y < ceil(size * (1 + ratio) * height / width * 2); y++){
         for(let x = 0; x < ceil(width/size); x++){
-            drawA(y, x, size*ratio, size);
-            drawB(y, x, size*ratio, size);
+            console.log("test");
+            drawA(x, y, size*ratio, size);
+            drawB(x, y, size*ratio, size);
         }
     }
 }
