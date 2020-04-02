@@ -6,7 +6,7 @@ function setup() {
     textAlign(CENTER, CENTER);
     
     sliderSize = createSlider(50, 500, 50, 0.1);
-    sliderPercentage = createSlider(0, 100, 55, 1);
+    sliderPercentage = createSlider(0, 100, 55, 0.1);
 }
 function draw() {
     frameRate(30);
