@@ -24,7 +24,7 @@ function draw() {
 }
 
 function drawSquaresAB(size, ratio){
-    console.log(-ceil(height * height / width / size / (1 + ratio)));
+    console.log(-ceil(width / size / (1 + ratio)));
     /*
     for(let y = -ceil(size * (1 + ratio) * height / width * 2); y < ceil(size * (1 + ratio) * height / width * 2); y++){
         for(let x = 0; x < ceil(width/size); x++){
