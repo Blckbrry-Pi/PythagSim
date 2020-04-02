@@ -41,7 +41,7 @@ function drawA(lateral, vertical, sizeA, sizeB){
 
 function drawB(lateral, vertical, sizeA, sizeB){
     fill(200);
-    rect(lateral * sizeA + lateral * sizeB + vertical * sizeB, (sizeB - sizeA) * (lateral) + vertical * sizeA, sizeB, sizeB);
+    rect(lateral * sizeA + lateral * sizeB + vertical * sizeB, (sizeB - sizeA) * (lateral) + vertical * (sizeA + sizeB), sizeB, sizeB);
 }
 
 function drawSquaresC(){
