@@ -13,6 +13,8 @@ function draw() {
     background(255);
     stroke(255, 0, 0);
     drawSquaresAB(sliderSize.value(), sliderPercentage.value() / 100);
+    stroke(0, 0, 255);
+    drawSquaresC(sliderSize.value(), sliderPercentage.value() / 100);
     
     
     fill(255);
