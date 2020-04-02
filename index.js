@@ -14,8 +14,9 @@ function draw() {
     rect(0, height/10*9,  width, height/10);
     
     
-    fill(255);
+    fill(0);
     text("Square Sizes", width/4, height/30*28);
+    text("A:B ratio", width/4*3, height/30*28);
     sliderSize.position(width/30, height - height/30);
     sliderPercentage.position(width/30*16, height - height/30);
 }
