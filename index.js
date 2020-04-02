@@ -24,16 +24,13 @@ function draw() {
 }
 
 function drawSquaresAB(size, ratio){
-    console.log(-ceil(width / size / (1 + ratio)));
-    /*
-    for(let y = -ceil(size * (1 + ratio) * height / width * 2); y < ceil(size * (1 + ratio) * height / width * 2); y++){
+    for(let y = -ceil(width / size / (1 + ratio)); y < ceil(width / size / (1 + ratio)); y++){
         for(let x = 0; x < ceil(width/size); x++){
             console.log("test");
             drawA(x, y, size*ratio, size);
             drawB(x, y, size*ratio, size);
         }
     }
-    */
 }
 
 function drawA(lateral, vertical, sizeA, sizeB){
