@@ -6,7 +6,7 @@ function setup() {
     textAlign(CENTER, CENTER);
     
     sliderSize = createSlider(50, 500, 50, 0.1);
-    sliderPercentage = createSlider(10, 100, 55, 1);
+    sliderPercentage = createSlider(0, 100, 55, 1);
 }
 function draw() {
     frameRate(1);
@@ -28,7 +28,7 @@ function draw() {
 }
 
 function drawSquaresAB(size, ratio){
-    for(let y = -ceil(width / size / (1 - ratio + 0.001)); y < ceil(width / size / (1 - ratio + 0.001)); y++){
+    for(let y = -ceil(width / size / (1 - ratio / 2)); y < ceil(width / size / (1 - ratio + 0.001)); y++){
         for(let x = 0 - ceil(height/size); x < ceil(width/size); x++){
             console.log(x + ", " + y);
             drawA(x, y, size*ratio, size);
