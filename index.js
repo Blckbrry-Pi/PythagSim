@@ -50,3 +50,9 @@ function drawB(lateral, vertical, sizeA, sizeB){
 function drawSquaresC(){
     
 }
+
+function drawC(lateral, vertical, sizeA, sizeB){
+    fill(0, 255, 0);
+    line(lateral * sizeA + (lateral + 1) * sizeB + vertical * sizeA, (sizeB - sizeA) * (lateral + 1) + vertical * sizeB, (lateral + 1) * sizeA + (lateral + 2) * sizeB + vertical * sizeA, (sizeB - sizeA) * (lateral + 2) + vertical * sizeB);
+    rect(lateral * sizeA + (lateral + 1) * sizeB + vertical * sizeA, (sizeB - sizeA) * (lateral + 1) + vertical * sizeB, lateral * sizeA + (lateral + 1) * sizeB + (vertical - 1) * sizeA, (sizeB - sizeA) * (lateral + 1) + (vertical - 1) * sizeB);
+}
