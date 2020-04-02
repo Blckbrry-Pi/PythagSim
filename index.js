@@ -36,7 +36,7 @@ function drawSquaresAB(size, ratio){
 
 function drawA(lateral, vertical, sizeA, sizeB){
     fill(100);
-    rect(lateral * sizeA + lateral * (sizeB + 1) + vertical * sizeB, (sizeB - sizeA) * (lateral + 1) + vertical * sizeA, sizeA, sizeA);
+    rect(lateral * sizeA + lateral * (sizeB + 1) + vertical * sizeB, (sizeB - sizeA) * (lateral + 1) + vertical * (sizeA + sizeB), sizeA, sizeA);
 }
 
 function drawB(lateral, vertical, sizeA, sizeB){
