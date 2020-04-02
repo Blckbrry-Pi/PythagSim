@@ -20,7 +20,7 @@ function draw() {
     text("A:B ratio", width/4*3, height/30*28);
     sliderSize.position(width/30, height - height/30);
     sliderPercentage.position(width/30*16, height - height/30);
-    drawSquaresAB(sliderSize.value(), sliderPercentage.value());
+    drawSquaresAB(sliderSize.value(), sliderPercentage.value() / 100);
 }
 
 function drawSquaresAB(size, ratio){
