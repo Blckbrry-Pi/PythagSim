@@ -9,7 +9,7 @@ function setup() {
     sliderPercentage = createSlider(0, 100, 55, 1);
 }
 function draw() {
-    frameRate(1);
+    frameRate(30);
     background(255);
     stroke(255, 0, 0);
     drawSquaresAB(sliderSize.value(), sliderPercentage.value() / 100);
