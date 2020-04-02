@@ -9,6 +9,7 @@ function setup() {
     sliderPercentage = createSlider(10, 100, 55, 1);
 }
 function draw() {
+    frameRate(10);
     fill(255);
     background(255);
     rect(0, height/10*9,  width, height/10);
@@ -26,7 +27,7 @@ function draw() {
 function drawSquaresAB(size, ratio){
     for(let y = -ceil(width / size / (1 + ratio)); y < ceil(width / size / (1 + ratio)); y++){
         for(let x = 0; x < ceil(width/size); x++){
-            console.log("test");
+            console.log(y, x);
             drawA(x, y, size*ratio, size);
             drawB(x, y, size*ratio, size);
         }
